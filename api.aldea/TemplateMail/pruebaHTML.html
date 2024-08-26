@@ -1,0 +1,196 @@
+<html>
+<body>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+table, td, th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.columnaMorada{
+	background: rgb(70, 42, 64);
+	color:#FFFFFF;
+	font-weight: bold;
+}
+
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+}
+
+table.sinTabla,tr.sinTabla,td.sinTabla{
+	border-style: none !important;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+td.sinTabla{
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.negrita{
+	font-weight: bold;
+}
+
+.sizePhoto{
+	height:120px;
+	width:120px;
+}
+
+.inventoryTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.inventoryTable td, .inventoryTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.inventoryTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(70, 42, 64);
+  color: white;
+}
+
+</style>
+
+<h3 align="center">Property Delivery / Move In Inspection</h3>
+<table>
+<tr>
+<td class="columnaMorada">Tenant</td>
+<td>@VarTenant</td>
+<td class="columnaMorada">Landlord</td>
+<td>@VarLandlord</td>
+</tr>
+<tr>
+<td class="columnaMorada">Address</td>
+<td colspan="3">@VarAddress</td>
+</tr>
+<tr>
+<td class="columnaMorada">City, Country</td>
+<td colspan="3">@VarCity</td>
+</tr>
+<tr>
+<td class="columnaMorada">Move In Date</td>
+<td colspan="3">@VarDate</td>
+</tr>
+</table>
+<br>
+<br>
+<!--Esto va dentro de un for-->
+<table cellpadding="5px">
+<tr>
+<td class="columnaMorada">@VarTitulo</td>
+</tr>
+<tr>
+<td>
+<table  class="sinTabla">
+<tr><td colspan="4" class="sinTabla"><br></td></tr>
+<tr class="sinTabla">
+<td class="sinTabla">
+<p>
+  <label class="negrita">Status</label>
+  <input class="w3-input" type="text" value="@VarStatus">
+</p>
+</td>
+<td class="sinTabla">
+<p>
+  <label class="negrita">Condition</label>
+  <input class="w3-input" type="text" value="@VarCondition">
+</p>
+</td>
+<td colspan="2" class="sinTabla" align="center" style="padding-left:5px !important; padding-right:5px !important;">
+<p>
+<label class="negrita">Actions</label>
+<div style="display:inline-block">
+<div class="sub-menu">
+  <i class="fa fa-circle fa-lg" style="color:@VarNothing"></i>
+  <label>Nothing</label>
+</div>
+</div>
+<div style="display:inline-block">
+<div class="sub-menu">
+  <i class="fa fa-circle fa-lg"style="color:@VarClean"></i>
+  <label>Clean</label>
+</div>
+</div>
+<div style="display:inline-block">
+<div class="sub-menu">
+  <i class="fa fa-circle fa-lg"style="color:@VarRepare"></i>
+  <label>Repare</label>
+</div>
+</div>
+<div style="display:inline-block">
+<div class="sub-menu">
+  <i class="fa fa-circle fa-lg"style="color:@VarReplace"></i>
+  <label>Replace</label>
+</div>
+</div>
+</p>
+</td>
+</tr>
+<tr><td colspan="4" class="sinTabla"><br></td></tr>
+<tr>
+<td colspan="4" class="sinTabla">
+<p>
+  <label class="negrita">Reports Details</label>
+  <textarea class="w3-input" type="text" value="@VarReports"></textarea>
+</p>
+</td>
+</tr>
+<tr><td colspan="4" class="sinTabla"><br></td></tr>
+<tr>
+<td colspan="4" class="sinTabla">
+<h4 align="left">Photos</h3>
+</td>
+</tr>
+<tr>
+@VarPhoto1
+<!--<td class="sinTabla"><img class="sizePhoto" src="video1.png"></img></td>-->
+</tr>
+<tr>
+@VarPhoto2
+<!--<td class="sinTabla"><img class="sizePhoto" src="video1.png"></img></td>-->
+</tr>
+<tr>
+@VarPhoto3
+<!--<td class="sinTabla"><img class="sizePhoto" src="video1.png"></img></td>-->
+</tr>
+<tr>
+<td class="sinTabla" height="120px"></td>
+</tr>
+<tr>
+<td colspan="4" class="sinTabla">
+<h4 align="left">Inventory</h3>
+</td>
+</tr>
+<tr><td colspan="4" class="sinTabla"><br></td></tr>
+<table class="inventoryTable">
+<tr>
+    <th>Item</th>
+    <th>Descripcion</th>
+    <th>Quantity</th>
+    <th>Photos</th>
+  </tr>
+ @VarInventory
+</table>
+</table>
+</td>
+</tr>
+</table>
+@TableFor
+</body>
+</html>

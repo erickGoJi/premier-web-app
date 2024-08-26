@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api.premier", "api.aldea\api.premier.csproj", "{21F97CE4-5003-40B6-BA6E-36BD8A4F1985}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "biz.premier", "biz.aldea\biz.premier.csproj", "{955D9919-7B30-4D8C-8E94-7E74F4551E1B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dal.premier", "dal.aldea\dal.premier.csproj", "{D71C808D-57C6-45CD-8795-E570F0C005A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21F97CE4-5003-40B6-BA6E-36BD8A4F1985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F97CE4-5003-40B6-BA6E-36BD8A4F1985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F97CE4-5003-40B6-BA6E-36BD8A4F1985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F97CE4-5003-40B6-BA6E-36BD8A4F1985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{955D9919-7B30-4D8C-8E94-7E74F4551E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955D9919-7B30-4D8C-8E94-7E74F4551E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955D9919-7B30-4D8C-8E94-7E74F4551E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955D9919-7B30-4D8C-8E94-7E74F4551E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D71C808D-57C6-45CD-8795-E570F0C005A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D71C808D-57C6-45CD-8795-E570F0C005A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D71C808D-57C6-45CD-8795-E570F0C005A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D71C808D-57C6-45CD-8795-E570F0C005A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91A4994E-0318-4F59-8C0D-64E55E941253}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://minimalistdev.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = api.aldea\\api.premier.csproj
+		SccProjectName1 = api.aldea
+		SccLocalPath1 = api.aldea
+		SccProjectUniqueName2 = biz.aldea\\biz.premier.csproj
+		SccProjectName2 = biz.aldea
+		SccLocalPath2 = biz.aldea
+		SccProjectUniqueName3 = dal.aldea\\dal.premier.csproj
+		SccProjectName3 = dal.aldea
+		SccLocalPath3 = dal.aldea
+	EndGlobalSection
+EndGlobal

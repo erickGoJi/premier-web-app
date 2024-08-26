@@ -1,0 +1,153 @@
+<html>
+<body>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+table, td, th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.columnaMorada{
+	background: rgb(70, 42, 64);
+	color:#FFFFFF;
+	font-weight: bold;
+}
+
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  padding-right:5px;
+}
+
+table.sinTabla,tr.sinTabla,td.sinTabla{
+	border-style: none !important;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+td.sinTabla{
+	padding-left:20px;
+	
+	padding-right:20px;
+}
+
+.negrita{
+	font-weight: bold;
+}
+
+.sizePhoto{
+	max-width: 180px;
+	max-height: 180px;
+	width: auto;
+}
+
+.inventoryTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.inventoryTable td, .inventoryTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.inventoryTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(70, 42, 64);
+  color: white;
+}
+
+#signaturename {
+  text-align: left;
+  font-weight: bold;
+  font-size: 100%;
+}
+
+#signature {
+  width: 100%;
+  border-bottom: 1px solid black;
+  height: 30px;
+}
+
+</style>
+<img src="logo_nuevo_pds.png" alt="Premier" style="max-width: 240px;max-height: 90px;width: auto"/>
+<h3 align="center">Property Delivery / Move In Inspection</h3>
+<table>
+<tr>
+<td class="columnaMorada">Tenant</td>
+<td>@VarTenant</td>
+<td class="columnaMorada">Landlord</td>
+<td>@VarLandlord</td>
+</tr>
+<tr>
+<td class="columnaMorada">Address</td>
+<td colspan="3">@VarAddress</td>
+</tr>
+<tr>
+<td class="columnaMorada">City, Country</td>
+<td colspan="3">@VarCity</td>
+</tr>
+<tr>
+<td class="columnaMorada">Move In Date</td>
+<td colspan="3">@VarDate</td>
+</tr>
+</table>
+<br>
+<br>
+<!--Esto va dentro de un for-->
+@Datos
+<h3 align="left"style="font-weight: bold; padding-top:100px;">Signatures</h3>
+<table class="sinTabla">
+<tr class="sinTabla">
+<td span="2" class="sinTabla">
+<div id="signature">
+</div>
+<div id="signaturename">
+  Tenant Signature
+</div>
+</td>
+<td class="sinTabla">
+</td>
+<td class="sinTabla">
+<div id="signature">
+</div>
+<div id="signaturename">
+  Date
+</div>
+</td>
+</tr>
+<tr class="sinTabla"><td class="sinTabla"><br></td></tr>
+<tr class="sinTabla"><td class="sinTabla"><br></td></tr>
+<tr class="sinTabla"><td class="sinTabla"><br></td></tr>
+<tr class="sinTabla">
+<td span="2" class="sinTabla">
+<div id="signature">
+</div>
+<div id="signaturename">
+  LandLord Signature
+</div>
+</td>
+<td class="sinTabla">
+</td>
+<td class="sinTabla">
+<div id="signature">
+</div>
+<div id="signaturename">
+  Date
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
